@@ -45,12 +45,14 @@
 }
 
 .service-card {
-  background: white;
-  border-radius: 20px;
-  padding: 2.5rem;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(107, 70, 193, 0.1);
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 28px;
+  padding: 3.5rem;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(107, 70, 193, 0.12);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
 }
@@ -61,13 +63,30 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 5px;
   background: linear-gradient(90deg, #6B46C1, #10B981);
 }
 
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(107, 70, 193, 0.02), rgba(16, 185, 129, 0.02));
+  transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.service-card:hover::after {
+  left: 0;
+}
+
 .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transform: translateY(-20px) scale(1.03);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.12);
+  border-color: rgba(107, 70, 193, 0.2);
 }
 
 .registration-card {
@@ -121,24 +140,72 @@
 .service-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 0;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(107, 70, 193, 0.08), rgba(16, 185, 129, 0.05));
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.service-item:hover::before {
+  left: 0;
+}
+
+.service-item:hover {
+  transform: translateX(12px);
 }
 
 .service-bullet {
   color: #6B46C1;
-  font-weight: 600;
-  font-size: 0.875rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(107, 70, 193, 0.12), rgba(107, 70, 193, 0.06));
 }
 
 .tax-card .service-bullet {
   color: #10B981;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+}
+
+.service-item:hover .service-bullet {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(107, 70, 193, 0.2);
+}
+
+.tax-card .service-item:hover .service-bullet {
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 }
 
 .service-name {
   font-size: 0.875rem;
   font-weight: 500;
   color: #374151;
+  transition: color 0.3s ease;
+}
+
+.service-item:hover .service-name {
+  color: #1F2937;
+  font-weight: 600;
 }
 
 .card-footer {
