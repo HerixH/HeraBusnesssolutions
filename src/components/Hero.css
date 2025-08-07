@@ -25,7 +25,7 @@
   bottom: 0;
   background: linear-gradient(135deg, 
     rgba(107, 70, 193, 0.05) 0%, 
-    rgba(16, 185, 129, 0.03) 50%, 
+    rgba(139, 92, 246, 0.03) 50%, 
     rgba(107, 70, 193, 0.04) 100%);
 }
 
@@ -37,7 +37,7 @@
   bottom: 0;
   background-image: 
     radial-gradient(circle at 25% 25%, rgba(107, 70, 193, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
+    radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.06) 0%, transparent 50%);
   background-size: 120px 120px;
   animation: float 25s ease-in-out infinite;
 }
@@ -54,7 +54,7 @@
 .shape {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(16, 185, 129, 0.1));
+  background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(139, 92, 246, 0.1));
   animation: float 20s ease-in-out infinite;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .hero-accent {
-  color: #10B981;
+  color: #8B5CF6;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -342,8 +342,14 @@
 }
 
 .feature-icon {
-  font-size: 1.5rem;
-  animation: pulse 2s ease-in-out infinite;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6B46C1;
+  background: rgba(107, 70, 193, 0.1);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .feature-item span {
@@ -403,7 +409,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #10B981;
+  color: #8B5CF6;
   font-weight: 600;
   font-size: 0.875rem;
 }
@@ -411,7 +417,7 @@
 .status-dot {
   width: 8px;
   height: 8px;
-  background: #10B981;
+  background: #8B5CF6;
   border-radius: 50%;
   animation: pulse 2s ease-in-out infinite;
 }
@@ -441,14 +447,18 @@
 }
 
 .service-icon {
-  font-size: 2rem;
+  font-size: 0.875rem;
+  font-weight: 700;
   width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(16, 185, 129, 0.1));
+  background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(139, 92, 246, 0.1));
   border-radius: 12px;
+  color: #6B46C1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .service-info h4 {
@@ -501,7 +511,9 @@
 }
 
 .floating-icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #6B46C1;
 }
 
 .floating-content span {

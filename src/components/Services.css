@@ -23,7 +23,7 @@
 }
 
 .services-title span {
-  background: linear-gradient(135deg, #6B46C1, #10B981);
+  background: linear-gradient(135deg, #6B46C1, #8B5CF6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -64,7 +64,7 @@
   left: 0;
   right: 0;
   height: 5px;
-  background: linear-gradient(90deg, #6B46C1, #10B981);
+  background: linear-gradient(90deg, #6B46C1, #8B5CF6);
 }
 
 .service-card::after {
@@ -120,7 +120,7 @@
 }
 
 .tax-card .card-icon {
-  background: linear-gradient(135deg, #10B981, #34D399);
+  background: linear-gradient(135deg, #8B5CF6, #A78BFA);
 }
 
 .card-header h3 {
@@ -183,8 +183,8 @@
 }
 
 .tax-card .service-bullet {
-  color: #10B981;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+  color: #8B5CF6;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05));
 }
 
 .service-item:hover .service-bullet {
@@ -193,7 +193,7 @@
 }
 
 .tax-card .service-item:hover .service-bullet {
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
 }
 
 .service-name {

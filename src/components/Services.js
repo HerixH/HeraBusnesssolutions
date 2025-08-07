@@ -39,7 +39,7 @@ const Services = () => {
           <div className="service-card registration-card">
             <div className="card-header">
               <div className="card-icon">
-                <span>📋</span>
+                <span>REG</span>
               </div>
               <h3>REGISTRATION</h3>
             </div>
@@ -61,7 +61,7 @@ const Services = () => {
           <div className="service-card tax-card">
             <div className="card-header">
               <div className="card-icon">
-                <span>💼</span>
+                <span>TAX</span>
               </div>
               <h3>TAX COMPLIANCY</h3>
             </div>

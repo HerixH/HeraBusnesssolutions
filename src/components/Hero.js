@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-text">
             <div className="hero-badge">
-              <span>✨ Trusted by 500+ Businesses</span>
+              <span>Trusted by 500+ Businesses</span>
             </div>
             
             <h1 className="hero-title">
@@ -50,15 +50,15 @@ const Hero = () => {
             
             <div className="hero-features">
               <div className="feature-item">
-                <div className="feature-icon">⚡</div>
+                <div className="feature-icon">Fast</div>
                 <span>Fast Processing</span>
               </div>
               <div className="feature-item">
-                <div className="feature-icon">🛡️</div>
+                <div className="feature-icon">Secure</div>
                 <span>100% Compliant</span>
               </div>
               <div className="feature-item">
-                <div className="feature-icon">💎</div>
+                <div className="feature-icon">Premium</div>
                 <span>Premium Support</span>
               </div>
             </div>
@@ -75,59 +75,59 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="card-content">
-                  <div className="service-grid">
-                    <div className="service-item">
-                      <div className="service-icon">📊</div>
-                      <div className="service-info">
-                        <h4>Tax Filing</h4>
-                        <p>Complete compliance</p>
-                      </div>
-                    </div>
-                    <div className="service-item">
-                      <div className="service-icon">🏢</div>
-                      <div className="service-info">
-                        <h4>Registration</h4>
-                        <p>Business setup</p>
-                      </div>
-                    </div>
-                    <div className="service-item">
-                      <div className="service-icon">📋</div>
-                      <div className="service-info">
-                        <h4>Consulting</h4>
-                        <p>Expert guidance</p>
-                      </div>
-                    </div>
-                    <div className="service-item">
-                      <div className="service-icon">💼</div>
-                      <div className="service-info">
-                        <h4>Compliance</h4>
-                        <p>Regulatory support</p>
-                      </div>
-                    </div>
-                  </div>
+                                     <div className="service-grid">
+                     <div className="service-item">
+                       <div className="service-icon">Tax</div>
+                       <div className="service-info">
+                         <h4>Tax Filing</h4>
+                         <p>Complete compliance</p>
+                       </div>
+                     </div>
+                     <div className="service-item">
+                       <div className="service-icon">Reg</div>
+                       <div className="service-info">
+                         <h4>Registration</h4>
+                         <p>Business setup</p>
+                       </div>
+                     </div>
+                     <div className="service-item">
+                       <div className="service-icon">Con</div>
+                       <div className="service-info">
+                         <h4>Consulting</h4>
+                         <p>Expert guidance</p>
+                       </div>
+                     </div>
+                     <div className="service-item">
+                       <div className="service-icon">Com</div>
+                       <div className="service-info">
+                         <h4>Compliance</h4>
+                         <p>Regulatory support</p>
+                       </div>
+                     </div>
+                   </div>
                 </div>
               </div>
               
-              <div className="floating-card card-1">
-                <div className="floating-content">
-                  <div className="floating-icon">📈</div>
-                  <span>500+ Happy Clients</span>
-                </div>
-              </div>
-              
-              <div className="floating-card card-2">
-                <div className="floating-content">
-                  <div className="floating-icon">⭐</div>
-                  <span>10+ Years Experience</span>
-                </div>
-              </div>
-              
-              <div className="floating-card card-3">
-                <div className="floating-content">
-                  <div className="floating-icon">🎯</div>
-                  <span>100% Success Rate</span>
-                </div>
-              </div>
+                             <div className="floating-card card-1">
+                 <div className="floating-content">
+                   <div className="floating-icon">500+</div>
+                   <span>Happy Clients</span>
+                 </div>
+               </div>
+               
+               <div className="floating-card card-2">
+                 <div className="floating-content">
+                   <div className="floating-icon">10+</div>
+                   <span>Years Experience</span>
+                 </div>
+               </div>
+               
+               <div className="floating-card card-3">
+                 <div className="floating-content">
+                   <div className="floating-icon">100%</div>
+                   <span>Success Rate</span>
+                 </div>
+               </div>
             </div>
           </div>
         </div>
