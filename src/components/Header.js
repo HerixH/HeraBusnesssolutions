@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import logo from '../assets/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +23,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <img className="logo-image" src={logo} alt="Hera Business Solutions" />
+          <img className="logo-image" src="/images/hera-logo.jpeg" alt="Hera Business Solutions logo" />
           <div className="logo-text">
             <h1>HERA</h1>
             <span>BUSINESS SOLUTIONS</span>
