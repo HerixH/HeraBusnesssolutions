@@ -86,14 +86,6 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="specialization-highlight">
-              <h3>We Are Specialized In:</h3>
-              <div className="specialization-tags">
-                <span className="tag registration">Registration Services</span>
-                <span className="tag tax">Tax Compliance</span>
-                <span className="tag consulting">Business Consulting</span>
-              </div>
-            </div>
           </div>
 
           <div className="contact-form-container">
