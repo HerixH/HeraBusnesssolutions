@@ -1,0 +1,14 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heraGradient" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6B46C1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#heraGradient)"/>
+  <!-- Stylized H -->
+  <rect x="18" y="16" width="8" height="32" rx="2" fill="#FFFFFF"/>
+  <rect x="38" y="16" width="8" height="32" rx="2" fill="#FFFFFF"/>
+  <rect x="24" y="30" width="24" height="8" rx="2" fill="#FFFFFF"/>
+</svg>
+

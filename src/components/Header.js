@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
+import logo from '../assets/logo.svg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,16 +24,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <div className="logo-icon">
-            <div className="lotus-petals">
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-            </div>
-          </div>
+          <img className="logo-image" src={logo} alt="Hera Business Solutions" />
           <div className="logo-text">
             <h1>HERA</h1>
             <span>BUSINESS SOLUTIONS</span>
