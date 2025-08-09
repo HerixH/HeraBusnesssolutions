@@ -43,14 +43,14 @@
 .logo-text h1 {
   font-size: 1.35rem;
   font-weight: 700;
-  color: #111827;
+  color: #6B46C1;
   letter-spacing: -0.02em;
   margin: 0;
 }
 
 .logo-text span {
   font-size: 0.7rem;
-  color: #6B7280;
+  color: #6B46C1;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -68,14 +68,14 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #374151;
+  color: #6B46C1;
   font-weight: 500;
   padding: 0.5rem 0;
   transition: color 0.2s ease;
 }
 
 .nav-list a:hover {
-  color: #6B46C1;
+  color: #8B5CF6;
 }
 
 .nav-list a::after {
