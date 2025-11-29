@@ -44,7 +44,7 @@ const Footer = () => {
               <span>info@herabusiness.com</span>
             </div>
             <div className="contact-item">
-              <span>Lusaka, Zambia</span>
+              <span>2nd Floor Lotti House, Cairo Road, Lusaka, Zambia</span>
             </div>
           </div>
 

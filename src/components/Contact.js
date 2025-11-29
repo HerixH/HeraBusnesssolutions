@@ -72,6 +72,7 @@ const Contact = () => {
             <div className="info-card">
               <div className="info-details">
                 <h3>Visit Us</h3>
+                <p>2nd Floor Lotti House, Cairo Road</p>
                 <p>Lusaka, Zambia</p>
                 <span className="availability">Office hours: 8AM - 5PM</span>
               </div>
