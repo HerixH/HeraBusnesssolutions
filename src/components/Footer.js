@@ -38,15 +38,12 @@ const Footer = () => {
           <div className="footer-contact">
             <h4>Contact Info</h4>
             <div className="contact-item">
-              <span className="contact-icon">📞</span>
               <span>+260 976 722 919</span>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">📧</span>
               <span>info@herabusiness.com</span>
             </div>
             <div className="contact-item">
-              <span className="contact-icon">📍</span>
               <span>Lusaka, Zambia</span>
             </div>
           </div>

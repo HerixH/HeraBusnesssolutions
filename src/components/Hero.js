@@ -40,25 +40,20 @@ const Hero = () => {
             <div className="hero-buttons">
               <button className="btn-primary" onClick={() => document.getElementById('services').scrollIntoView()}>
                 <span>Explore Services</span>
-                <div className="btn-icon">→</div>
               </button>
               <button className="btn-secondary" onClick={() => document.getElementById('contact').scrollIntoView()}>
                 <span>Get Started</span>
-                <div className="btn-icon">📞</div>
               </button>
             </div>
             
             <div className="hero-features">
               <div className="feature-item">
-                <div className="feature-icon">Fast</div>
                 <span>Fast Processing</span>
               </div>
               <div className="feature-item">
-                <div className="feature-icon">Secure</div>
                 <span>100% Compliant</span>
               </div>
               <div className="feature-item">
-                <div className="feature-icon">Premium</div>
                 <span>Premium Support</span>
               </div>
             </div>
@@ -77,28 +72,24 @@ const Hero = () => {
                 <div className="card-content">
                                      <div className="service-grid">
                      <div className="service-item">
-                       <div className="service-icon">Tax</div>
                        <div className="service-info">
                          <h4>Tax Filing</h4>
                          <p>Complete compliance</p>
                        </div>
                      </div>
                      <div className="service-item">
-                       <div className="service-icon">Reg</div>
                        <div className="service-info">
                          <h4>Registration</h4>
                          <p>Business setup</p>
                        </div>
                      </div>
                      <div className="service-item">
-                       <div className="service-icon">Con</div>
                        <div className="service-info">
                          <h4>Consulting</h4>
                          <p>Expert guidance</p>
                        </div>
                      </div>
                      <div className="service-item">
-                       <div className="service-icon">Com</div>
                        <div className="service-info">
                          <h4>Compliance</h4>
                          <p>Regulatory support</p>

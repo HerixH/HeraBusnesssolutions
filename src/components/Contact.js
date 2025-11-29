@@ -54,9 +54,6 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <div className="info-card">
-              <div className="info-icon">
-                <span>📞</span>
-              </div>
               <div className="info-details">
                 <h3>Call Us</h3>
                 <p className="phone-number">+260 976 722 919</p>
@@ -65,9 +62,6 @@ const Contact = () => {
             </div>
 
             <div className="info-card">
-              <div className="info-icon">
-                <span>📧</span>
-              </div>
               <div className="info-details">
                 <h3>Email Us</h3>
                 <p>info@herabusiness.com</p>
@@ -76,9 +70,6 @@ const Contact = () => {
             </div>
 
             <div className="info-card">
-              <div className="info-icon">
-                <span>📍</span>
-              </div>
               <div className="info-details">
                 <h3>Visit Us</h3>
                 <p>Lusaka, Zambia</p>
@@ -172,7 +163,6 @@ const Contact = () => {
 
               {isSubmitted && (
                 <div className="success-message">
-                  <span>✅</span>
                   <p>Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
                 </div>
               )}

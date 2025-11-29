@@ -38,16 +38,12 @@ const Services = () => {
         <div className="services-grid">
           <div className="service-card registration-card">
             <div className="card-header">
-              <div className="card-icon">
-                <span>REG</span>
-              </div>
               <h3>REGISTRATION</h3>
             </div>
             
             <div className="service-list">
               {registrationServices.map((service, index) => (
                 <div key={index} className="service-item">
-                  <span className="service-bullet">→</span>
                   <span className="service-name">{service}</span>
                 </div>
               ))}
@@ -60,16 +56,12 @@ const Services = () => {
 
           <div className="service-card tax-card">
             <div className="card-header">
-              <div className="card-icon">
-                <span>TAX</span>
-              </div>
               <h3>TAX COMPLIANCY</h3>
             </div>
             
             <div className="service-list">
               {taxComplianceServices.map((service, index) => (
                 <div key={index} className="service-item">
-                  <span className="service-bullet">→</span>
                   <span className="service-name">{service}</span>
                 </div>
               ))}

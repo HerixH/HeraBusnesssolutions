@@ -1,6 +1,7 @@
 {
   "name": "hera-business-solutions",
   "version": "1.0.0",
+  "private": true,
   "description": "HERA Business Solutions - Tax Compliance Consultancy Website",
   "main": "index.js",
   "scripts": {
@@ -15,6 +16,10 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^3.3.2"
   },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -26,9 +31,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
   }
 }
