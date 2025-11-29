@@ -22,7 +22,8 @@ const Services = () => {
     'WITHHOLDING TAX',
     'TOURISM LEVY',
     'PTT',
-    'BID SUBMIT TENDERS'
+    'TAX RECONCILIATION',
+    'TENDER SUBMISSION'
   ];
 
   return (
