@@ -57,7 +57,7 @@ const Contact = () => {
               <div className="info-details">
                 <h3>Call Us</h3>
                 <p className="phone-number">+260 976 722 919</p>
-                <span className="availability">Available Monday - Friday, 8AM - 6PM</span>
+                <span className="availability">8AM - 5PM</span>
               </div>
             </div>
 
