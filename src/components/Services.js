@@ -1,90 +1,81 @@
 import React from 'react';
 import './Services.css';
 
+const registrationServices = [
+  'PACRA', 'ZRA', 'NAPSA', 'ZPPA', 'NCC',
+  'NHIMA', 'Worker Compensation', 'Bank Account Opening', 'EIZ', 'ERB',
+];
+
+const taxComplianceServices = [
+  'PAYE', 'VAT', 'TOT', 'Withholding Tax', 'Tourism Levy',
+  'PTT', 'Tax Reconciliation', 'Tender Submission',
+];
+
 const Services = () => {
-  const registrationServices = [
-    'PACRA',
-    'ZRA',
-    'NAPSA',
-    'ZPPA',
-    'NCC',
-    'NHIMA',
-    'WORKER COMPENSATION',
-    'BANK ACCOUNT OPENING',
-    'EIZ',
-    'ERB'
-  ];
-
-  const taxComplianceServices = [
-    'PAYE',
-    'VAT',
-    'TOT',
-    'WITHHOLDING TAX',
-    'TOURISM LEVY',
-    'PTT',
-    'TAX RECONCILIATION',
-    'TENDER SUBMISSION'
-  ];
-
   return (
     <section id="services" className="services">
-      <div className="services-container">
-        <div className="services-header">
-          <h2 className="services-title">WE ARE <span>SPECIALIZED IN:</span></h2>
-          <p className="services-subtitle">
-            Comprehensive business solutions tailored to meet your compliance and registration needs
+      <div className="section-container">
+        <div className="section-header reveal">
+          <span className="section-badge">Our Expertise</span>
+          <h2 className="section-title">Services we specialize in</h2>
+          <p className="section-subtitle">
+            Comprehensive business solutions tailored to your compliance and registration needs
           </p>
         </div>
 
         <div className="services-grid">
-          <div className="service-card registration-card">
-            <div className="card-header">
-              <h3>REGISTRATION</h3>
+          <article className="service-card reveal">
+            <div className="service-card-header">
+              <div className="service-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+              </div>
+              <div>
+                <h3>Registration</h3>
+                <p className="service-card-meta">{registrationServices.length} services</p>
+              </div>
             </div>
-            
-            <div className="service-list">
-              {registrationServices.map((service, index) => (
-                <div key={index} className="service-item">
-                  <span className="service-name">{service}</span>
-                </div>
-              ))}
-            </div>
-            
-            <div className="card-footer">
-              <p>Complete registration services for all your business needs</p>
-            </div>
-          </div>
 
-          <div className="service-card tax-card">
-            <div className="card-header">
-              <h3>TAX COMPLIANCY</h3>
-            </div>
-            
-            <div className="service-list">
-              {taxComplianceServices.map((service, index) => (
-                <div key={index} className="service-item">
-                  <span className="service-name">{service}</span>
-                </div>
+            <ul className="service-list">
+              {registrationServices.map((service) => (
+                <li key={service}>{service}</li>
               ))}
+            </ul>
+          </article>
+
+          <article className="service-card reveal">
+            <div className="service-card-header">
+              <div className="service-card-icon service-card-icon--green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+              <div>
+                <h3>Tax Compliance</h3>
+                <p className="service-card-meta">{taxComplianceServices.length} services</p>
+              </div>
             </div>
-            
-            <div className="card-footer">
-              <p>Ensuring 100% tax compliance for your business operations</p>
-            </div>
-          </div>
+
+            <ul className="service-list">
+              {taxComplianceServices.map((service) => (
+                <li key={service}>{service}</li>
+              ))}
+            </ul>
+          </article>
         </div>
 
-        <div className="services-cta">
-          <div className="cta-content">
-            <h3>Ready to Get Started?</h3>
-            <p>Let us handle your business compliance while you focus on growth</p>
-            <button 
-              className="cta-button"
-              onClick={() => document.getElementById('contact').scrollIntoView()}
-            >
-              Get Free Consultation
-            </button>
-          </div>
+        <div className="services-cta reveal">
+          <h3>Ready to get started?</h3>
+          <p>Let us handle your compliance while you focus on growth.</p>
+          <button
+            className="btn btn-white"
+            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+          >
+            Get free consultation
+          </button>
         </div>
       </div>
     </section>

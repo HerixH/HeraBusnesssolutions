@@ -1,47 +1,65 @@
 import React, { useState, useEffect } from 'react';
+import useActiveSection from '../hooks/useActiveSection';
 import './Header.css';
+
+const navLinks = [
+  { href: '#home', label: 'Home', id: 'home' },
+  { href: '#services', label: 'Services', id: 'services' },
+  { href: '#about', label: 'About', id: 'about' },
+  { href: '#contact', label: 'Contact', id: 'contact' },
+];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const activeSection = useActiveSection();
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 50);
-    };
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isMenuOpen]);
 
-    window.addEventListener('scroll', handleScroll);
+  useEffect(() => {
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="logo">
-          <img className="logo-image" src="/images/hera-logo.jpeg" alt="Hera Business Solutions logo" />
+        <a href="#home" className="logo" onClick={closeMenu}>
+          <img className="logo-image" src="/images/hera-logo.svg?v=11" alt="Hera Business Solutions logo" />
           <div className="logo-text">
-            <h1>HERA</h1>
-            <span>BUSINESS SOLUTIONS</span>
+            <span className="logo-name">HERA</span>
+            <span className="logo-tagline">Business Solutions</span>
           </div>
-        </div>
+        </a>
         
-        <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`} onClick={() => setIsMenuOpen(false)}>
+        <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul className="nav-list">
-            <li><a href="#home" onClick={(e) => { e.stopPropagation(); setIsMenuOpen(false); }}>Home</a></li>
-            <li><a href="#services" onClick={(e) => { e.stopPropagation(); setIsMenuOpen(false); }}>Services</a></li>
-            <li><a href="#about" onClick={(e) => { e.stopPropagation(); setIsMenuOpen(false); }}>About</a></li>
-            <li><a href="#contact" onClick={(e) => { e.stopPropagation(); setIsMenuOpen(false); }}>Contact</a></li>
+            {navLinks.map(({ href, label, id }) => (
+              <li key={id}>
+                <a
+                  href={href}
+                  className={activeSection === id ? 'active' : ''}
+                  onClick={closeMenu}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
+          <a href="#contact" className="nav-cta" onClick={closeMenu}>
+            Get Consultation
+          </a>
         </nav>
         
         <button 
           className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} 
-          onClick={toggleMenu}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
         >

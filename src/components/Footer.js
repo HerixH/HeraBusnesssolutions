@@ -7,67 +7,45 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-content">
+        <div className="footer-grid">
           <div className="footer-brand">
-            <div className="footer-logo">
-              <img className="footer-logo-image" src="/images/hera-logo.jpeg" alt="Hera Business Solutions logo" />
-              <div className="logo-text">
-                <h3>HERA</h3>
-                <span>BUSINESS SOLUTIONS</span>
+            <a href="#home" className="footer-logo">
+              <img src="/images/hera-logo.svg?v=11" alt="HERA Business Solutions" />
+              <div>
+                <strong>HERA</strong>
+                <span>Business Solutions</span>
               </div>
-            </div>
-            <p className="footer-description">
-              Your favourite tax compliance consultancy firm. 
-              We provide comprehensive business solutions for registration, 
-              tax compliance, and corporate services.
+            </a>
+            <p>
+              Professional tax compliance and business registration consultancy
+              serving businesses across Zambia.
             </p>
           </div>
 
-          <div className="footer-services">
-            <h4>Our Services</h4>
+          <div className="footer-col">
+            <h4>Services</h4>
             <ul>
-              <li>Business Registration</li>
-              <li>Tax Compliance</li>
-              <li>PACRA Services</li>
-              <li>ZRA Registration</li>
-              <li>VAT & PAYE</li>
-              <li>Corporate Consulting</li>
+              <li><a href="#services">Business Registration</a></li>
+              <li><a href="#services">Tax Compliance</a></li>
+              <li><a href="#services">PACRA &amp; ZRA</a></li>
+              <li><a href="#services">Corporate Consulting</a></li>
             </ul>
           </div>
 
-          <div className="footer-contact">
-            <h4>Contact Info</h4>
-            <div className="contact-item">
-              <span>+260 976 722 919</span>
-            </div>
-            <div className="contact-item">
-              <span>info@herabusiness.com</span>
-            </div>
-            <div className="contact-item">
-              <span>2nd Floor Lotti House, Cairo Road, Lusaka, Zambia</span>
-            </div>
-          </div>
-
-          <div className="footer-cta">
-            <h4>Ready to Get Started?</h4>
-            <p>Contact us today for professional business solutions</p>
-            <button 
-              className="footer-cta-button"
-              onClick={() => document.getElementById('contact').scrollIntoView()}
-            >
-              Get Consultation
-            </button>
+          <div className="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="tel:+260976722919">+260 976 722 919</a></li>
+              <li><a href="mailto:info@herabusiness.com">info@herabusiness.com</a></li>
+              <li>Lotti House, Cairo Road, Lusaka</li>
+            </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <div className="footer-bottom-content">
-            <p>&copy; {currentYear} HERA Business Solutions. All rights reserved.</p>
-            <div className="footer-links">
-              <a href="#privacy">Privacy Policy</a>
-              <a href="#terms">Terms of Service</a>
-              <a href="#contact">Contact</a>
-            </div>
+          <p>&copy; {currentYear} HERA Business Solutions. All rights reserved.</p>
+          <div className="footer-links">
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </div>
