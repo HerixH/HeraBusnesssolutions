@@ -3,7 +3,7 @@ import './Services.css';
 
 const registrationServices = [
   'PACRA', 'ZRA', 'NAPSA', 'ZPPA', 'NCC',
-  'NHIMA', 'Worker Compensation', 'Bank Account Opening', 'EIZ', 'ERB',
+  'NHIMA', 'Workers Compensation', 'Bank Account Opening', 'EIZ', 'ERB',
 ];
 
 const taxComplianceServices = [
