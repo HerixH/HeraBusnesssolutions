@@ -19,7 +19,7 @@ const values = [
   },
   {
     title: 'End-to-end service',
-    description: 'From PACRA registration to ZRA filings with one dedicated team.',
+    description: 'From PACRA, ZRA and all regulatory agencies with one dedicated team.',
   },
 ];
 
@@ -53,8 +53,8 @@ const About = () => {
               is the go-to consultancy for businesses seeking reliable compliance services.
             </p>
             <p>
-              Our team understands the complexities of Zambian business regulations,
-              from PACRA and ZRA registrations to ongoing tax filings.
+              From PACRA, ZRA and all regulatory agencies, our team understands
+              the complexities of Zambian business regulations and ongoing tax filings.
             </p>
             <ul className="about-highlights">
               <li>Licensed &amp; certified professionals</li>

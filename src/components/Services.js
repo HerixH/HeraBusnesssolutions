@@ -19,7 +19,8 @@ const Services = () => {
           <span className="section-badge">Our Expertise</span>
           <h2 className="section-title">Services we specialize in</h2>
           <p className="section-subtitle">
-            Comprehensive business solutions tailored to your compliance and registration needs
+            From PACRA, ZRA and all regulatory agencies. Comprehensive business solutions
+            tailored to your compliance and registration needs.
           </p>
         </div>
 
