@@ -54,7 +54,7 @@ const About = () => {
             </p>
             <p>
               Our team understands the complexities of Zambian business regulations,
-              from PACRA and ZRA registrations to ongoing tax filings and tender submissions.
+              from PACRA and ZRA registrations to ongoing tax filings.
             </p>
             <ul className="about-highlights">
               <li>Licensed &amp; certified professionals</li>

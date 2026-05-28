@@ -8,7 +8,7 @@ const registrationServices = [
 
 const taxComplianceServices = [
   'PAYE', 'VAT', 'TOT', 'Withholding Tax', 'Tourism Levy',
-  'PTT', 'Tax Reconciliation', 'Tender Submission',
+  'PTT', 'Tax Reconciliation',
 ];
 
 const Services = () => {
